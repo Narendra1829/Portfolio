@@ -7,7 +7,10 @@
     <title>Narendra Jakka</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -37,19 +40,16 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <section id="profile" class="fade-in-section">
       <div class="section__pic-container">
         <img src="./assets/ProfilePhoto-photoaidcom-cropped.jpeg" alt="profile picture" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
+        <p class="section_text_p1">Hello, I'm</p>
         <h1 class="title">Narendra Jakka</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section_text_p2">Frontend Developer</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Narendra_Jakka_FD.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/Narendra_Jakka_FD.pdf')">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -57,18 +57,8 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://in.linkedin.com/in/narendra-jakka-6671a2160', '_blank')"
-            />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/Narendra1829', '_blank')"
-            />
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://in.linkedin.com/in/narendra-jakka-6671a2160', '_blank')" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="window.open('https://github.com/Narendra1829', '_blank')" />
         </div>
       </div>
     </section>
@@ -487,6 +477,5 @@
       </nav>
       <p>Copyright &#169; 2025 Narendra Jakka. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
